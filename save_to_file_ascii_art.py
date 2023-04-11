@@ -26,7 +26,8 @@ def image_to_ascii(image, width):
     return '\n'.join(ascii_art_lines)
 
 # Load the image
-image = Image.open('image.jpg')
+useThisImage = input('Please input your image name with ext: ')
+image = Image.open(useThisImage)
 
 # Resize the image to a smaller size
 image = resize_image(image)
